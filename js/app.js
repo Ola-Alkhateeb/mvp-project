@@ -8,7 +8,8 @@ angular.module('myApp', [])
     $scope.search = "Sherlock Holmes";
 
     function fetch(){
-      $http.get("http://www.omdbapi.com/?t=" + $scope.search.replace(' ' , '+') + '&y=&plot=short&r=json')
+      var x = $scope.search.split(' ').join('+');
+      $http.get("http://www.omdbapi.com/?t=" + x+ "&y=&plot=short&r=json")
       .then(function(response){ console.log(response.data)
         $scope.details = response.data; });
 
