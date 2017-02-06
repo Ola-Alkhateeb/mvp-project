@@ -27,7 +27,6 @@
 
   <p class="outer-p-2">Ratings:<br>
     <strong>IMDb Rating</strong>: <span class="label label-success">{{ details.imdbRating }}</span><br>
-    <strong>Rotten Tomatoes</strong>: <span class="label label-success">{{ details.tomatoRating }}</span>
   </p>
 
   <p class="outer-p-3">
@@ -35,9 +34,7 @@
     <span class="divider"></span>
     <a ng-href="http://subscene.com/subtitles/title?q={{ details.Title }}" target="_blank" class="btn btn-default btn-xs btn-info">Get Subtitles!</a>
     <span class="divider"></span>
-    <a ng-href="http://www.theost.com/search/custom/?key={{ details.Title }}" target="_blank" class="btn btn-default btn-xs btn-info">Hear Soundtracks!</a>
-    <span class="divider"></span>
-    <a ng-href="http://www.amazon.in/s/ref=nb_sb_noss_1?url=search-alias%3Ddvd&field-keywords={{ details.Title }}" target="_blank" class="btn btn-default btn-xs btn-info">Buy this movie!</a>
+    <a ng-href="https://www.youtube.com/results?search_query={{ details.Title }} + '+soundtrack'" target="_blank" class="btn btn-default btn-xs btn-info">Hear Soundtracks!</a>
   </p>
 </div>
 
