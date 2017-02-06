@@ -5,9 +5,6 @@
   "author": "Hack Reactor <curriculum.team@hackreactor.com>",
   "license": "UNLICENSED",
   "private": true,
-  "engines": {
-    "node": ">=4.0.0"
-  },
   "scripts": {
     "postinstall": "npm install",
     "start": "grunt build && grunt upload",
