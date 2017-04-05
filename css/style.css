@@ -38,6 +38,11 @@ ul.rel-results {
   color: rgb(250,250,250);
 }
 
+/*.related-results {
+  -moz-animation-delay: 1.5s;
+  -webkit-animation-delay: 1.5s;
+}*/
+
 .movie-poster {
   float:left;
   width: 150px;
